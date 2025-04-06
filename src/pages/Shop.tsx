@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Layout from '@/components/layout/Layout';
 import ProductGrid from '@/components/product/ProductGrid';
 import { useProducts } from '@/hooks/useProducts';
@@ -51,7 +51,7 @@ const Shop = () => {
   };
   
   // Apply filters when dependencies change
-  useState(() => {
+  useEffect(() => {
     applyFilters();
   }, [products, selectedCategories, priceRange]);
   

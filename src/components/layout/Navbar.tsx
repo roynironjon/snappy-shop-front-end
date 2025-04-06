@@ -42,6 +42,9 @@ const Navbar = () => {
             <Link to="/about" className="text-foreground hover:text-teal transition-colors">
               About
             </Link>
+            <Link to="/portfolio" className="text-foreground hover:text-teal transition-colors">
+              Portfolio
+            </Link>
           </nav>
 
           {/* Search, User, Wishlist, and Cart - Desktop */}
@@ -117,6 +120,9 @@ const Navbar = () => {
               </Link>
               <Link to="/about" className="text-foreground hover:text-teal py-2 transition-colors" onClick={() => setIsMenuOpen(false)}>
                 About
+              </Link>
+              <Link to="/portfolio" className="text-foreground hover:text-teal py-2 transition-colors" onClick={() => setIsMenuOpen(false)}>
+                Portfolio
               </Link>
             </nav>
 
